@@ -1,0 +1,10 @@
+{
+    "bolt": [
+      { "id": 1, "name": "tej", "price": 100 },
+      { "id": 2, "name": "kenyér", "price": 130 },
+      { "id": 3, "name": "vörösbor", "price": 3000 },
+      { "id": 4, "name": "narancslé", "unit": "l", "desc": "Hohes C","store": 30, "price": "1300 Ft" },
+      {"id": 5, "name" : "tej", "unit":"l", "desc" :"zsírtartalom: 2,8 %", "store" : 20, "price" : "380 Ft"}
+    ]
+    
+  }
