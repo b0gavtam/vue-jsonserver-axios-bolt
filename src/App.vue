@@ -10,10 +10,11 @@ onMounted(()=>{
 
 <template>
   <header>
-    <div class="wrapper">
+    <div class="container">
       <nav>
-        <RouterLink to="/" class="link">Termékek </RouterLink>
-        <RouterLink to="/cart" class="link">Kosár</RouterLink>
+        <RouterLink to="/" class="btn button-outline-success m-2">Termékek </RouterLink>
+        <RouterLink to="/cart" class="btn button-outline-success m-2">Kosár</RouterLink>
+        <RouterLink to="/new" class="btn button-outline-success m-2">Új Termék</RouterLink>
         
       </nav>
 
