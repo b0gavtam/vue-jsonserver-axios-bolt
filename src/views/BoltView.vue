@@ -8,7 +8,7 @@
           <p class="card-text">{{ p.price }}</p>
         </div>
         <div class="card-footer text-center">
-          <button @click="botStore.addToCart(p.id)" class="btn btn-outline-primary w-50">&#128722;</button>
+          <button :disabled="p.store < 1" @click="botStore.addToCart(p.id)" class="btn btn-outline-primary w-50">&#128722;</button>
         </div>
       </div>
     </div>
