@@ -9,7 +9,7 @@
 
                 </tr>
             </table>
-            <button @click="emptycart()" class="btn btn-outline-danger m-2">Kosár Ürítése</button>
+            <button @click="botStore.emptycart()" class="btn btn-outline-danger m-2">Kosár Ürítése</button>
         </div>
     </div>
 </template>
