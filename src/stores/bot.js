@@ -11,6 +11,7 @@ export const useBotStore = defineStore('bot', () => {
   //function increment() {
   //  count.value++
   // }
+  const total = ref(0)
   const loadAll = () =>{
     fetch("http://localhost:3000/bolt")
     .then(resp=> resp.json())
@@ -53,6 +54,13 @@ export const useBotStore = defineStore('bot', () => {
     cart.value = {}
     toast.error("kosár ürítve")
   }
+  const countTotal = () =>{
+    let t = 0
+    for (const key in cart.value) {
+      t+= parseFloat(products.value.find(p=> p.id == key).price) * cart.value[key]
+    }
+    return t
+  }
 
-  return { products, cart, loadAll, addToCart, saveProduct, emptycart}
+  return { products, cart, loadAll, addToCart, saveProduct, emptycart, countTotal}
 })
