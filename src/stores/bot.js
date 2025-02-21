@@ -2,6 +2,8 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import axios from 'axios'
 import { useToast } from 'vue-toastification'
+import axios from 'axios'
+import { useToast } from 'vue-toastification'
 
 export const useBotStore = defineStore('bot', () => {
   const products = ref([])
